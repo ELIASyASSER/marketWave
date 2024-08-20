@@ -1,0 +1,46 @@
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    margin-bottom: 30px;
+    .box{
+        cursor: pointer;
+        .img{
+            position: relative;
+            &::before{
+                @include pre-overlay(black,0.5);
+            }        
+            &:hover::before{        
+                @include after-overlay;
+            }
+            img{
+                width: 100%;
+                
+            }
+        }
+    }
+    .txt{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 17%;
+            background-color: white;
+            width: 80%;
+            @include centerFlex;
+            flex-direction: column;
+            height: 150px;
+        h1{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p{
+            line-height: 1.6;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    img{
+        // width: calc(100% / 4);
+        max-width: 100%;
+    }
+}

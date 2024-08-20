@@ -1,0 +1,86 @@
+header{
+    z-index: 22;
+    height: 110px;
+    @include centerFlex;
+    @include linearGradient;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width:992px) {
+            width: 100%;
+        }
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+        ul.links{
+                display: flex;            
+                //place holder
+                %border-bottom{
+                    
+                    transition: 0.5s;
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    background-color: $light-orange;
+                    transform: translateX(-50%);
+                    width: 60px;
+                    height: 2px;
+                }     
+                
+                
+            @media (max-width:767px) {
+                margin-top: 20px;
+            }
+            a{  
+    
+                position: relative;
+                color: white;
+                font-weight: 700;
+                font-size: 19px;
+                padding:  9px;
+                margin-left: 12px;
+                display: block;
+                @media (max-width:767px) {
+                    padding: 3px;
+                    font-size: 15px;
+                }
+                
+                &:not(.contact):hover,&.active{
+                    border-bottom: 2px solid $light-orange;
+    
+                }
+    
+                &.contact{
+                    background-color: $light-orange;
+                    border-radius: 50px;
+                    transition: 0.7s;
+                    padding: 9px 24px;
+                    
+                @media (max-width:767px) {
+                    padding: 3px;
+                }
+    
+                    &:hover{
+                    background-color: transparent;
+                    border: 2px solid white;
+    
+    
+                    }
+                }
+                @media (max-width:767px) {
+                    
+                }
+    
+            
+            }
+        }
+        img{
+            width: 220px;
+        }
+        
+    }
+    
+
+}

@@ -1,0 +1,30 @@
+.btn-blue{
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1.7rem;
+    background-color: $light-sky-blue;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 17px;
+    &:hover{
+        background-color: $dark-sky-blue;
+    }
+}
+
+.btn-orange{
+    background-color: $light-orange;
+    border-radius: 50px;
+    transition: 0.7s;
+    padding: 9px 24px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 19px;
+    color: white;
+    &:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    }
+}

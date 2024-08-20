@@ -1,0 +1,67 @@
+.work{
+    padding-top: calc($section-padding + 30px);
+    padding-bottom: $section-padding;
+    background-color: $bg-white;
+    @include main-title;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        align-items: center;
+        gap: 30px;
+        
+        .box{
+            background-color: #fff;
+            &:not(.im){
+                padding: 25px;
+            }
+            &:last-child{
+                span{
+                    color: $light-orange;
+                }
+            }
+            span{
+                font-size: 36px;
+                font-weight: bold;
+                color: $light-sky-blue;
+            }
+            h3{
+                font-size: 25px;
+                font-weight: 600;
+                font-style: normal;
+            }
+            p{
+                line-height: 1.5;
+            }
+
+                
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .text{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 30px;
+            @media (max-width:992px) {
+            grid-template-columns: repeat(1,1fr);
+            text-align: center;
+            gap: 0;
+                
+            }
+        }
+        padding: 35px 0;
+        .plan{
+                font-size: 24px;
+                font-weight: bold;
+        }
+        p{
+            line-height: 1.7;
+            margin: 0;
+        }
+    }
+}

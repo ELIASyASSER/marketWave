@@ -1,0 +1,32 @@
+.services{
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    @include main-title;
+    .container{
+        padding-bottom: $section-padding;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+        gap: 30px;
+        .col{
+            text-align: center;
+            .txt{
+                h3{
+                    margin-top: 10px;
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+                p{
+                    line-height: 1.8;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            img{
+                width: 230px;
+                max-width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
